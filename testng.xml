@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="PetSuite" verbose="1" >
+    <listeners>
+        <listener class-name="api.utilities.ExtentReportManager"/>
+    </listeners>
+    <test name="PetsTest" >
+        <classes>
+            <class name="api.tests.UserTests" />
+        </classes>
+    </test>
+</suite>
