@@ -4,6 +4,8 @@ import api.endpoints.UserEndPoints;
 import api.payload.User;
 import com.github.javafaker.Faker;
 import io.restassured.response.Response;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -12,6 +14,8 @@ import org.testng.annotations.Test;
 public class UserTests {
     private Faker faker;
     private User user;
+
+    private Logger logger;
 
     @BeforeClass
     public void setUp(){
@@ -25,14 +29,19 @@ public class UserTests {
         user.setPhone(faker.phoneNumber().cellPhone());
         user.setPassword(faker.internet().password(5, 10));
         user.setUsername(faker.name().username());
+
+        //logger
+        logger = LogManager.getLogger(this.getClass());
     }
 
     @Test(priority = 1)
     public void posTest(){
+        logger.info("Crested User beggin");
         Response response = UserEndPoints.createUser(user);
         response.then().log().all();
-
+        logger.info(response.then().log().all());
         Assert.assertEquals(response.getStatusCode(), 200);
+        logger.info("Crested User ended");
 
     }
 
