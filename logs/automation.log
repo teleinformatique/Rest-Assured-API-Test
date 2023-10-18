@@ -1,0 +1,15 @@
+12:25:30.837 [main] INFO  api.tests.UserTests - Crested User beggin
+12:25:32.155 [main] INFO  api.tests.UserTests - io.restassured.internal.ValidatableResponseImpl@24cbf894
+12:25:32.156 [main] INFO  api.tests.UserTests - Crested User ended
+12:26:16.957 [main] INFO  api.tests.UserTests - Crested User beggin
+12:26:18.473 [main] INFO  api.tests.UserTests - io.restassured.internal.ValidatableResponseImpl@1203d787
+12:26:18.474 [main] INFO  api.tests.UserTests - Crested User ended
+14:28:03.138 [main] INFO  api.tests.UserTests - Crested User beggin
+14:28:05.818 [main] INFO  api.tests.UserTests - io.restassured.internal.ValidatableResponseImpl@18f8e2e0
+14:28:05.819 [main] INFO  api.tests.UserTests - Crested User ended
+14:29:11.430 [main] INFO  api.tests.UserTests - Crested User beggin
+14:29:13.401 [main] INFO  api.tests.UserTests - io.restassured.internal.ValidatableResponseImpl@18f8e2e0
+14:29:13.402 [main] INFO  api.tests.UserTests - Crested User ended
+16:38:39.667 [main] INFO  api.tests.UserTests2 - Crested User beggin
+16:38:41.237 [main] INFO  api.tests.UserTests2 - io.restassured.internal.ValidatableResponseImpl@499c4d61
+16:38:41.238 [main] INFO  api.tests.UserTests2 - Crested User ended
